@@ -37,7 +37,7 @@ h5 {
 }
 
 .jumbotron {
-  background-image: url('images/hacktalks_gradient-02.png');
+  background-image: url('../images/hacktalks_gradient-02.png');
   background-position: center;
   background-size: cover;
   vertical-align: center;
@@ -109,7 +109,7 @@ h5 {
 
 #thisyear {
   color: #fbfbfb;
-  background-image: url('images/hacktalks_talker.png');
+  background-image: url('../images/hacktalks_talker.png');
   background-position: center;
   background-size: cover;
   height: 80vh;
@@ -387,7 +387,7 @@ input, textarea, select, button {
     margin-top: 1vh;
     align-items: center;
     width: 80vw !important;
-    height: 360px !important; */
+    height: 360px !important;
     }
 
     #lastyear > #centerlink > a {
@@ -401,7 +401,7 @@ input, textarea, select, button {
 
     #thisyear {
       color: #fbfbfb;
-      background-image: url('images/hacktalks_talker.png');
+      background-image: url('../images/hacktalks_talker.png');
       background-position: center;
       background-size: cover;
       height: 80vh;
@@ -446,7 +446,7 @@ input, textarea, select, button {
     and (max-width: 1024px) {
       #thisyear {
         color: #fbfbfb;
-        background-image: url('images/hacktalks_talker.png');
+        background-image: url('../images/hacktalks_talker.png');
         background-position: center;
         background-size: cover;
         height: 100%;
