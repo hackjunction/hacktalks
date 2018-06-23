@@ -1,0 +1,471 @@
+body {
+  width: 100%;
+  background-color: #fbfbfb;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+p {
+  margin-top: 2vh;
+  font-size: 1.3em;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+h2 {
+  border-bottom: 10px solid #AD00AD;
+  font-size: 2.3em;
+  line-height: 1.5em;
+  width: max-content;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.title {
+  margin: auto;
+  margin-top: 7vh;
+}
+
+.jumbotron {
+  background-image: url('images/hacktalks_gradient-02.png');
+  background-position: center;
+  background-size: cover;
+  vertical-align: center;
+  margin-bottom: 0px;
+  height: 60vh;
+  margin-left: -1vw;
+  margin-top: -1vw;
+}
+
+.landinglogo {
+  display: inline-block;
+  max-height: 15vw;
+  vertical-align: middle;
+  margin: 10vw 10vw 10vw 20vw;
+}
+
+#lila {
+  font-family: 'Montserrat';
+  color: #AD00AD;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  max-width: 60vw;
+  padding: 10vh 0 10vh 0;
+  margin: auto;
+}
+
+.box {
+  background-color: #232323;
+  padding-bottom: 1vh;
+  margin-left: -1vw;
+}
+
+.speak {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.speaker {
+  padding: 2vh 5vw;
+  max-width: 20vw;
+}
+
+#speakertitle {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 7vh;
+  margin-bottom: 0;
+}
+
+.speakerimg {
+  width: 20vw;
+  height: auto;
+}
+
+.description {
+  font-family: 'Lato';
+  font-size: .9rem;
+  color: #a3a2a2;
+  margin-top: -.9rem;
+}
+
+.speakertext {
+  font-family: 'Lato';
+  font-size: 0.9rem;
+}
+
+#thisyear {
+  color: #fbfbfb;
+  background-image: url('images/hacktalks_talker.png');
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  margin-left: -1vw;
+}
+
+#thisYearText {
+  padding: 5vh 0 0 55vw;
+  width: 35vw;
+}
+
+.scheduleBox {
+background-color: #ad00ad;
+margin-left: -1vw;
+height: 100%;
+}
+
+#help {
+  width: 80vw;
+}
+
+#scheduleTitle {
+  color: #fbfbfb;
+  border-bottom: 10px solid #fbfbfb;
+  font-size: 2.3em;
+  line-height: 1.5em;
+  width: max-content;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  margin: auto;
+  /* margin-top: 7vh;
+  margin-bottom: 4vh; */
+
+}
+
+table {
+  /* width: 80vw; */
+  margin: auto;
+  color: #fbfbfb;
+  font-size: 1.5em;
+}
+
+tr {
+padding: 8px;
+line-height: 1.42857;
+vertical-align: top;
+border-top: 3px solid #fbfbfb;
+width: 80vw;
+}
+
+tr > .tableTime {
+  padding-right: 20vw;
+  font-weight: 600;
+}
+
+tr > .tableProgram {
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+/* .tableTime {
+    text-align: center;
+} */
+
+#lastyear {
+  color: #fbfbfb;
+  padding: 3vh 0 3vh 3vw;
+  max-width: 80vw;
+  margin: auto;
+  margin-bottom: 7vh;
+}
+
+#lastyear > .videoWrap > iframe {
+margin-top: 3vh;
+width: 80vw !important;
+height: 540px !important;
+margin-bottom: 10vh;
+}
+
+#centerlink {
+text-align: center;
+}
+
+#lastyear > #centerlink > a {
+  border: 2px solid #fbfbfb;
+  padding: 1vh 4vw;
+  text-decoration: none;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+#newsletter {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 0;
+}
+
+.button {
+    background-color: #ad00ad;
+    border: 4px solid #ad00ad;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: -2px;
+}
+:focus {
+    outline: none;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 12px;
+}
+
+#email {
+    border: 4px solid #ad00ad;
+    padding: 10px 60px;
+    margin-right: -1vw;
+}
+
+#org {
+  border-bottom: 10px solid #fbfbfb;
+  line-height: 1.8em;
+  width: max-content;
+  align-items: center;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+#organized {
+  background-color: #232323;
+  color: #fbfbfb;
+  text-align: center;
+  padding-top: 3vh;
+  margin-left: -1vw;
+}
+
+
+.org {
+  width: 60vw;
+  display: inline-block;
+
+}
+.picorg {
+  height: 15vh;
+  width: auto;
+  padding: 20px;
+}
+
+.partner {
+  padding: 30px;
+  padding-bottom: 70px;
+}
+
+.ft {
+  display: flex;
+  background-color: #ad00ad;
+  color: #fbfbfb;
+  margin-left: -1vw;
+}
+
+.ft > .more {
+  padding: 2vh 0 2vh 10vw;
+  font-size: 1rem;
+  text-align: center;
+  width: 20vw;
+}
+
+.ft > .more > a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.ft > h4 {
+  font-size: 1rem;
+}
+
+.ft > .more > a {
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+.ft > .more > p {
+  font-size: 1rem;
+}
+
+/* MOBILE */
+
+
+  @media(max-width: 1024px) {
+
+
+    .jumbotron {
+      height: 40vh;
+    }
+
+    .landinglogo {
+      height: 40vh;
+    }
+
+    .lila {
+      padding: 3vh 0 3vh 0;
+      max-width: 90vw;
+      font-size: 2rem;
+    }
+
+    .speak {
+      display: block;
+      /* margin: 0; */
+    }
+
+    .speakerimg {
+      width: 80vw;
+      /* height: auto; */
+      /* margin:auto; */
+    }
+
+    .speaker {
+      padding: 2vh 5vw;
+      max-width: 80vw;
+    }
+
+    #speakertitle {
+      max-width: 90vw;
+    }
+
+    #lastyear {
+      /* padding: 1.5vh 0 1vh 0vh; */
+      max-width: 65vw;
+    }
+
+    h2 {
+      border-bottom: 10px solid #AD00AD;
+      font-size: 2,5em;
+      line-height: 1.5em;
+      width: max-content;
+    }
+
+    p {
+      margin-top: 0.6vh;
+      font-size: 1.9rem;
+      font-family: 'Lato';
+    }
+
+    #lastyear > .videoWrap > iframe {
+    margin-top: 1vh;
+    align-items: center;
+    width: 80vw !important;
+    height: 360px !important; */
+    }
+
+    #lastyear > #centerlink > a {
+      border: 2px solid #fbfbfb;
+      padding: 1vh 4vw;
+      text-decoration: none;
+      color: #fbfbfb;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    #thisyear {
+      color: #fbfbfb;
+      background-image: url('images/hacktalks_talker.png');
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+    }
+
+    #thisYearText {
+      padding: 5vh 0 0 50vw;
+      width: 43vw;
+    }
+
+    .button {
+        background-color: #ad00ad;
+        border: 4px solid #ad00ad;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0;
+        display: block;
+        margin: auto;
+        font-size: 2em;
+    }
+
+    .formemail {
+      margin-bottom: 2vh;
+      font-size: 2em;
+    }
+
+    .org {
+      width: 80vw;
+
+    }
+    .picorg {
+      height: 7vh;
+      width: auto;
+      padding: 10px;
+    }
+
+  }
+
+  @media screen and (orientation:landscape)
+    and (max-width: 1024px) {
+      #thisyear {
+        color: #fbfbfb;
+        background-image: url('images/hacktalks_talker.png');
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        margin-left: -1vw;
+      }
+
+      #lastyear {
+        padding: 3vh 0 3vh 1vw;
+      }
+
+      .jumbotron {
+        height: 60vh;
+      }
+
+      .landinglogo {
+        max-height: 50vw;
+      }
+
+      #lila {
+        font-size: 2rem;
+      }
+  }
