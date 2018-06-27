@@ -370,7 +370,7 @@ text-align: center;
     margin-top: 1vh;
     align-items: center;
     width: 100% !important;
-    height: 360px !important; */
+    height: 360px !important;
     }
 
     #lastyear > #centerlink > a {
@@ -384,7 +384,7 @@ text-align: center;
 
     #thisyear {
       color: #fbfbfb;
-      background-image: url('images/hacktalks_talker.png');
+      background-image: url('../images/hacktalks_talker.png');
       background-position: center;
       background-size: cover;
       height: 80vh;
@@ -446,7 +446,7 @@ text-align: center;
     and (max-width: 1024px) {
       #thisyear {
         color: #fbfbfb;
-        background-image: url('images/hacktalks_talker.png');
+        background-image: url('../images/hacktalks_talker.png');
         background-position: center;
         background-size: cover;
         height: 100%;
