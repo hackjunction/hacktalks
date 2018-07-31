@@ -221,18 +221,34 @@ text-align: center;
 }
 
 .button {
-    background-color: #ad00ad;
-    border: 4px solid #ad00ad;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 0;
+  background-color: #ad00ad;
+  border: 4px solid #ad00ad;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0;
 }
 
 .button:hover {
-    background-color: #232323;
-    border: 4px solid #232323;
+  background-color: #232323;
+  border: 4px solid #232323;
+}
+
+.button-inverted {
+  background-color: white;
+  border: 4px solid white;
+  color: #232323;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.button-inverted:hover {
+  color: white;
+  background-color: #232323;
+  border: 4px solid #232323;
 }
 
 #email {
@@ -406,6 +422,23 @@ text-align: center;
         display: block;
         margin: auto;
         font-size: 2em;
+    }
+
+    .button-inverted {
+      background-color: white;
+      border: 4px solid white;
+      color: #232323;
+      padding: 10px 24px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 0;
+      display: block;
+      margin: auto;
+      font-size: 2em;
+    }
+
+    .button-inverted a {
+      text-decoration: none;
     }
 
     .formemail {
