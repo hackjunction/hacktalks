@@ -192,7 +192,7 @@
     }
 
     #jasmine_title {
-        font-size: 90%;
+        font-size: 83%;
     }
 }
 
@@ -214,10 +214,6 @@
     .sale-label-text {
         font-size: 14px;
         top: 22px;
-    }
-
-    #jasmine_title {
-        font-size: 86%;
     }
 
     #subscribe {
@@ -269,10 +265,6 @@
 
     #speakers-list {
         font-size: 80%;
-    }
-
-    #jasmine_title {
-        font-size: 90%;
     }
 
     .soon {
