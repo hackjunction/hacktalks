@@ -74,6 +74,16 @@ $(document).ready(function() {
     }, {
         offset: '50%'
     });
+    $('.js--wp-7').waypoint(function(direction) {
+        $('.js--wp-7').addClass('animated fadeInUp');
+    }, {
+        offset: '90%'
+    });
+    $('.js--wp-8').waypoint(function(direction) {
+        $('.js--wp-8').addClass('animated fadeInUp');
+    }, {
+        offset: '90%'
+    });
     
     
     /* Mobile navigation */
