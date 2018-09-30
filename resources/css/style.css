@@ -1097,3 +1097,35 @@ footer p {
 .workshop-modal p {
     margin-bottom: 20px;
 }
+
+/* ----------------------------------------------- */
+/* SCHEDULE */
+/* ----------------------------------------------- */
+
+.table > thead > tr > th, .table > thead > tr > th,
+.table > tbody > tr > th, .table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.5;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.table {
+    width: 100%;
+}
+
+#schedule {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
