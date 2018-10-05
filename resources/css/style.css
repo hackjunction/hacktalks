@@ -899,6 +899,10 @@ footer {
     color: #00aced;
 }
 
+.ion-social-instagram:hover {
+    color: #095589;
+}
+
 .ion-person:hover {
     color: #ad00ad;
 }
