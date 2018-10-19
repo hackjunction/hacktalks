@@ -1123,7 +1123,24 @@ footer p {
 }
 
 
+/* ----------------------------------------------- */
+/* MAP */
+/* ----------------------------------------------- */
+.mapouter {
+    text-align:right;
+    height: 502px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 5%;
+}
 
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height: 502px;
+    width: 100%;
+    box-shadow: 0 5px 30px rgba(0,0,0,.2);
+}
 
 
 
