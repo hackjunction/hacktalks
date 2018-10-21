@@ -355,42 +355,58 @@
                 <h2>Workshops</h2>
             </div>
             
-            <div class="row container" id="trigger_marko">
-                <div class="col span-1-of-4">
-                    <img class="workshop-speaker-img" src="resources/img/marko.jpg"/>
-                </div>
-                <div class="col span-3-of-4">
-                    <p class="workshop-title">Modern development pipeline using containers and cloud</p>     
-                    <p class="workshop-abstract">
-                        How's and why's of setting up a modern node/react-based development pipeline for continuous deployment. A hands-on exercise on how to get a quick start to a development setup including best practices, container technologies and automated testing. This session will tangibly describe the tools and practices necessary for producing modern, high-quality software products quickly and efficiently.
-                    </p>
-                    <p class="workshop-speaker"><strong><i class="ion-person"></i> Marko Klemetti - <span>CTO @ Eficode</span></strong></p>
+            <div class="row center" id="workshop-options">
+                <div>
+                    <div class="inline option-is-active" id="workshop-all">All</div>
+                    <div class="inline" id="workshop-cloud">Cloud Track</div>
+                    <div class="inline" id="workshop-ai">AI Track</div>
                 </div>
             </div>
-            <div class="row container" id="trigger_goran">
-                <div class="col span-1-of-4">
-                    <img class="workshop-speaker-img" src="./resources/img/goran.jpg"/>
+
+            <div id="cloud-workshops">
+                <div class="row container" id="trigger_marko">
+                    <div class="col span-1-of-4">
+                        <img class="workshop-speaker-img" src="resources/img/marko.jpg"/>
+                    </div>
+                    <div class="col span-3-of-4">
+                        <p class="workshop-title">Modern development pipeline using containers and cloud</p>     
+                        <p class="workshop-abstract">
+                            How's and why's of setting up a modern node/react-based development pipeline for continuous deployment. A hands-on exercise on how to get a quick start to a development setup including best practices, container technologies and automated testing. This session will tangibly describe the tools and practices necessary for producing modern, high-quality software products quickly and efficiently.
+                        </p>
+                        <p class="workshop-speaker"><strong><i class="ion-person"></i> Marko Klemetti - <span>CTO @ Eficode</span></strong></p>
+                        <div class="track"><span class="cloud">Cloud track</span></div>
+                    </div>
                 </div>
-                <div class="col span-3-of-4">
-                    <p class="workshop-title">Alexa Skill Development</p>
-                    <p class="workshop-abstract">
-                        Alexa is the speech and personal assistant technology that powers Amazon Echo. It can be used to listen music, check weather and traffic, answer questions, control household devices and much more. In this workshop you’ll get a hands-on introduction to Amazon Alexa and its ecosystem, and you’ll learn how to build Alexa skill from scratch. You'll create Alexa skill by programming AWS Lambda function in Node.js, you'll store skill data in DynamoDB database and you'll learn how to use SSML (Speech Synthesis Markup Language). Target audience for this workshop are developers who would like to extend their knowledge in order to be able to develop and publish skills for Alexa.
-                    </p>
-                    <p class="workshop-speaker"><strong><i class="ion-person"></i> Goran Vuksic - <span>Solution Architect @ Agnitio</span></strong></p>
+                <div class="row container" id="trigger_goran">
+                    <div class="col span-1-of-4">
+                        <img class="workshop-speaker-img" src="./resources/img/goran.jpg"/>
+                    </div>
+                    <div class="col span-3-of-4">
+                        <p class="workshop-title">Alexa Skill Development</p>
+                        <p class="workshop-abstract">
+                            Alexa is the speech and personal assistant technology that powers Amazon Echo. It can be used to listen music, check weather and traffic, answer questions, control household devices and much more. In this workshop you’ll get a hands-on introduction to Amazon Alexa and its ecosystem, and you’ll learn how to build Alexa skill from scratch. You'll create Alexa skill by programming AWS Lambda function in Node.js, you'll store skill data in DynamoDB database and you'll learn how to use SSML (Speech Synthesis Markup Language). Target audience for this workshop are developers who would like to extend their knowledge in order to be able to develop and publish skills for Alexa.
+                        </p>
+                        <p class="workshop-speaker"><strong><i class="ion-person"></i> Goran Vuksic - <span>Solution Architect @ Agnitio</span></strong></p>
+                        <div class="track"><span class="cloud">Cloud track</span></div>
+                    </div>
                 </div>
             </div>
-            <div class="row container" id="trigger_tuomas">
-                <div class="col span-1-of-4">
-                    <img class="workshop-speaker-img" src="./resources/img/tuomas.jpg"/>
+            
+            <div id="ai-workshops">
+                <div class="row container" id="trigger_tuomas">
+                    <div class="col span-1-of-4">
+                        <img class="workshop-speaker-img" src="./resources/img/tuomas.jpg"/>
+                    </div>
+                    <div class="col span-3-of-4">
+                        <p class="workshop-title">Running data science pipelines on the GPU using RAPIDS</p>
+                        <p class="workshop-abstract">
+                            RAPIDS is a set of open-source libraries enabling you to run data science pipelines entirely on the GPU with familiar Python interfaces. By tapping into the parallelism of GPUs, RAPIDS not only accelerates training of data science models but also speeds up common data preparation tasks resulting into faster iteration of your pipelines. In this workshop, you will learn how to get up to speed with RAPIDS as we interactively explore data ingestion and preparation as well as model training and inference using realistic examples.
+                        </p>
+                        <p class="workshop-speaker"><strong><i class="ion-person"></i> Tuomas Rintamäki - <span>Deep learning engineer @ NVIDIA</span></strong></p>
+                        <div class="track"><span class="ai">AI track</span></div>
+                    </div>
                 </div>
-                <div class="col span-3-of-4">
-                    <p class="workshop-title">Running data science pipelines on the GPU using RAPIDS</p>
-                    <p class="workshop-abstract">
-                        RAPIDS is a set of open-source libraries enabling you to run data science pipelines entirely on the GPU with familiar Python interfaces. By tapping into the parallelism of GPUs, RAPIDS not only accelerates training of data science models but also speeds up common data preparation tasks resulting into faster iteration of your pipelines. In this workshop, you will learn how to get up to speed with RAPIDS as we interactively explore data ingestion and preparation as well as model training and inference using realistic examples.
-                    </p>
-                    <p class="workshop-speaker"><strong><i class="ion-person"></i> Tuomas Rintamäki - <span>Deep learning engineer @ NVIDIA</span></strong></p>
-                </div>
-            </div>
+            </div>     
         </section>
 
         <div id="marko_modal" class="modal workshop-modal display-none">

@@ -609,6 +609,7 @@ h4 {
 
 .inline {
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn-ticket span {
@@ -690,11 +691,9 @@ h4 {
 #ticket-attendee {
     border-right: 3px solid #ad00ad;
     padding-right: 5px;
-    cursor: pointer;
 }
 
 #ticket-student {
-    cursor: pointer;
     padding-left: 2px;
 }
 
@@ -1100,6 +1099,35 @@ footer p {
 
 .workshop-modal p {
     margin-bottom: 20px;
+}
+
+#workshop-options {
+    margin-bottom: 20px;
+}
+
+#workshop-all, #workshop-cloud {
+    border-right: 3px solid #ad00ad;
+    padding-right: 5px;
+}
+
+.track {
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.cloud {
+    border: 1px solid #57ad00;
+    background-color: #57ad00;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ai {
+    border: 1px solid #ad8200;
+    background-color: #ad8200;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /* ----------------------------------------------- */
