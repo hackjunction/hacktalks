@@ -158,6 +158,11 @@ $(document).ready(function() {
         $('#goran_modal').addClass('display-block');
     });
 
+    $('#trigger_tuomas').click(function() {
+        $('#tuomas_modal').removeClass('display-none');
+        $('#tuomas_modal').addClass('display-block');
+    });
+
     $('.close-button').click(function() {
         $('.modal').removeClass('display-block');
         $('.modal').addClass('display-none');
@@ -165,7 +170,7 @@ $(document).ready(function() {
 
     $(document).click(function(event) {
     //if user click on anything except the modal itself close the modal
-      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, .modal-content").length) {
+      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, .modal-content").length) {
         $('#jasmine_modal').removeClass('display-block');
         $('#jasmine_modal').addClass('display-none');
         $('#mikko_modal').removeClass('display-block');
@@ -180,6 +185,8 @@ $(document).ready(function() {
         $('#marko_modal').addClass('display-none');
         $('#goran_modal').removeClass('display-block');
         $('#goran_modal').addClass('display-none');
+        $('#tuomas_modal').removeClass('display-block');
+        $('#tuomas_modal').addClass('display-none');
       }
     });
 });
