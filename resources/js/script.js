@@ -118,6 +118,26 @@ $(document).ready(function() {
         $('#ticket-student').addClass('option-is-active');
     });
 
+    /* Workshops Toggle */
+    $('#workshop-cloud').click(function() {
+        $('#cloud-workshops').removeClass('display-none');
+        $('#ai-workshops').addClass('display-none');
+        $('#workshop-cloud').addClass('option-is-active');
+        $('#workshop-all, #workshop-ai').removeClass('option-is-active');
+    });
+
+    $('#workshop-ai').click(function() {
+        $('#cloud-workshops').addClass('display-none');
+        $('#ai-workshops').removeClass('display-none');
+        $('#workshop-ai').addClass('option-is-active');
+        $('#workshop-all, #workshop-cloud').removeClass('option-is-active');
+    });
+
+    $('#workshop-all').click(function() {
+        $('#ai-workshops, #cloud-workshops').removeClass('display-none');
+        $('#workshop-all').addClass('option-is-active');
+        $('#workshop-ai, #workshop-cloud').removeClass('option-is-active');
+    });
 
     /* Modal */
 
@@ -146,7 +166,7 @@ $(document).ready(function() {
         $('#michael_modal').addClass('display-block');
     });
 
-    /*WORKSHOP*/
+    /* WORKSHOP */
 
     $('#trigger_marko').click(function() {
         $('#marko_modal').removeClass('display-none');
