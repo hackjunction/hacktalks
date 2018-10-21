@@ -1046,6 +1046,14 @@ footer p {
   border-radius: .25em;
 }
 
+/* ----------------------------------------------- */
+/* WORKSHOPS */
+/* ----------------------------------------------- */
+
+.section-workshop {
+    padding-top: 0;
+}
+
 .container {
     width: 90%;
     height: auto;
@@ -1114,7 +1122,7 @@ footer p {
 }
 
 .track {
-    margin-top: 15px;
+    margin: 15px 0;
     color: #fff;
     font-weight: 700;
 }
