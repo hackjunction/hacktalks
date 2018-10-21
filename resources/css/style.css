@@ -1170,7 +1170,19 @@ footer p {
     box-shadow: 0 5px 30px rgba(0,0,0,.2);
 }
 
+/* ----------------------------------------------- */
+/* PARTNERS */
+/* ----------------------------------------------- */
 
+.section-partners {
+    padding-bottom: 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 
