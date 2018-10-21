@@ -121,6 +121,10 @@ $(document).ready(function() {
     /* Workshops Toggle */
     $('#workshop-cloud').click(function() {
         $('#cloud-workshops').removeClass('display-none');
+        $('#cloud-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
         $('#ai-workshops').addClass('display-none');
         $('#workshop-cloud').addClass('option-is-active');
         $('#workshop-all, #workshop-ai').removeClass('option-is-active');
@@ -129,12 +133,20 @@ $(document).ready(function() {
     $('#workshop-ai').click(function() {
         $('#cloud-workshops').addClass('display-none');
         $('#ai-workshops').removeClass('display-none');
+        $('#ai-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
         $('#workshop-ai').addClass('option-is-active');
         $('#workshop-all, #workshop-cloud').removeClass('option-is-active');
     });
 
     $('#workshop-all').click(function() {
         $('#ai-workshops, #cloud-workshops').removeClass('display-none');
+        $('#ai-workshops, #cloud-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
         $('#workshop-all').addClass('option-is-active');
         $('#workshop-ai, #workshop-cloud').removeClass('option-is-active');
     });
