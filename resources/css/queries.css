@@ -146,9 +146,18 @@
         margin-bottom: 30px;
     }
 
-    .box {
+    #speakers-list .box {
         font-size: 120% !important;
-        box-shadow: 0 2px 2px #efefef;
+        box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15)
+    }
+
+    .speaker-photo:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .speaker-topic {
+        margin-bottom: 10px;
     }
 }
 
