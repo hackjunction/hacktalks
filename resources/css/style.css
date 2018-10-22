@@ -464,6 +464,9 @@ h4 {
     cursor: pointer;
 }
 
+#speakers-list .box:hover {
+    cursor: pointer;
+}
 
 /* ----------------------------------------------- */
 /* THIS YEAR */
