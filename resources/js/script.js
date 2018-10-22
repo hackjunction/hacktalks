@@ -118,6 +118,38 @@ $(document).ready(function() {
         $('#ticket-student').addClass('option-is-active');
     });
 
+    /* Workshops Toggle */
+    $('#workshop-cloud').click(function() {
+        $('#cloud-workshops').removeClass('display-none');
+        $('#cloud-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
+        $('#ai-workshops').addClass('display-none');
+        $('#workshop-cloud').addClass('option-is-active');
+        $('#workshop-all, #workshop-ai').removeClass('option-is-active');
+    });
+
+    $('#workshop-ai').click(function() {
+        $('#cloud-workshops').addClass('display-none');
+        $('#ai-workshops').removeClass('display-none');
+        $('#ai-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
+        $('#workshop-ai').addClass('option-is-active');
+        $('#workshop-all, #workshop-cloud').removeClass('option-is-active');
+    });
+
+    $('#workshop-all').click(function() {
+        $('#ai-workshops, #cloud-workshops').removeClass('display-none');
+        $('#ai-workshops, #cloud-workshops').addClass('animated pulse').delay(1000).queue(function(next){
+            $(this).removeClass("animated pulse");
+            next();
+        });
+        $('#workshop-all').addClass('option-is-active');
+        $('#workshop-ai, #workshop-cloud').removeClass('option-is-active');
+    });
 
     /* Modal */
 
@@ -146,7 +178,7 @@ $(document).ready(function() {
         $('#michael_modal').addClass('display-block');
     });
 
-    /*WORKSHOP*/
+    /* WORKSHOP */
 
     $('#trigger_marko').click(function() {
         $('#marko_modal').removeClass('display-none');
@@ -158,28 +190,27 @@ $(document).ready(function() {
         $('#goran_modal').addClass('display-block');
     });
 
+    $('#trigger_tuomas').click(function() {
+        $('#tuomas_modal').removeClass('display-none');
+        $('#tuomas_modal').addClass('display-block');
+    });
+
     $('.close-button').click(function() {
         $('.modal').removeClass('display-block');
         $('.modal').addClass('display-none');
     });
 
     $(document).click(function(event) {
-    //if user click on anything except the modal itself close the modal
-      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, .modal-content").length) {
-        $('#jasmine_modal').removeClass('display-block');
-        $('#jasmine_modal').addClass('display-none');
-        $('#mikko_modal').removeClass('display-block');
-        $('#mikko_modal').addClass('display-none');
-        $('#ines_modal').removeClass('display-block');
-        $('#ines_modal').addClass('display-none');
-        $('#charlie_modal').removeClass('display-block');
-        $('#charlie_modal').addClass('display-none');
-        $('#michael_modal').removeClass('display-block');
-        $('#michael_modal').addClass('display-none');
-        $('#marko_modal').removeClass('display-block');
-        $('#marko_modal').addClass('display-none');
-        $('#goran_modal').removeClass('display-block');
-        $('#goran_modal').addClass('display-none');
+    // if user click on anything except the modal itself close the modal
+      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, .modal-content").length) {
+        
+        // Handle speaker modals
+        $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').removeClass('display-block');
+        $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').addClass('display-none');
+        
+        // Handle workshop modals
+        $('#marko_modal, #goran_modal, #tuomas_modal').removeClass('display-block');
+        $('#marko_modal, #goran_modal, #tuomas_modal').addClass('display-none');
       }
     });
 });
