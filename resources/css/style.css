@@ -433,7 +433,7 @@ h4 {
 .box img {
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 
 .speaker-photo {
@@ -442,11 +442,25 @@ h4 {
     -webkit-box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
             box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
     color: rgb(82, 92, 101);
+    opacity: 1;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.speaker-photo:hover {
+    opacity: 0.95;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    cursor: pointer;
 }
 
 .name {
     font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .speaker-company {
@@ -460,12 +474,14 @@ h4 {
     padding-left: 15px;
 }
 
-#speakers-list .span-1-of-4 {
+#speakers-list .box:hover {
     cursor: pointer;
 }
 
-#speakers-list .box:hover {
-    cursor: pointer;
+.speaker-topic {
+    margin-top: 12px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* ----------------------------------------------- */
