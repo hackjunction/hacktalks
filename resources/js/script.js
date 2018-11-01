@@ -195,6 +195,11 @@ $(document).ready(function() {
         $('#tuomas_modal').addClass('display-block');
     });
 
+    $('#trigger_antti').click(function() {
+        $('#antti_modal').removeClass('display-none');
+        $('#antti_modal').addClass('display-block');
+    });
+
     $('.close-button').click(function() {
         $('.modal').removeClass('display-block');
         $('.modal').addClass('display-none');
@@ -202,15 +207,15 @@ $(document).ready(function() {
 
     $(document).click(function(event) {
     // if user click on anything except the modal itself close the modal
-      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, .modal-content").length) {
+      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, #trigger_antti, .modal-content").length) {
         
         // Handle speaker modals
         $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').removeClass('display-block');
         $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').addClass('display-none');
         
         // Handle workshop modals
-        $('#marko_modal, #goran_modal, #tuomas_modal').removeClass('display-block');
-        $('#marko_modal, #goran_modal, #tuomas_modal').addClass('display-none');
+        $('#marko_modal, #goran_modal, #tuomas_modal, #antti_modal').removeClass('display-block');
+        $('#marko_modal, #goran_modal, #tuomas_modal, #antti_modal').addClass('display-none');
       }
     });
 });
