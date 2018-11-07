@@ -214,6 +214,10 @@ input[type=submit]:active {
     color: #fff;
 }
 
+.sell-out {
+    background-color: #323438 !important;
+    border: none !important;
+}
 
 /* ----------------------------------------------- */
 /* HEADER */
