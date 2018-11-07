@@ -145,6 +145,15 @@
         font-size: 120%;
         margin-bottom: 30px;
     }
+
+    .span-1-of-6 {
+        width: 50%;
+    }
+
+    #partners .row .span-1-of-6:first-child,
+    #partners .row .span-1-of-6:last-child {
+        display: none;
+    }
 }
 
 
