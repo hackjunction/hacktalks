@@ -168,9 +168,9 @@ $(document).ready(function() {
         $('#ines_modal').addClass('display-block');
     });
 
-    $('#trigger_charlie').click(function() {
-        $('#charlie_modal').removeClass('display-none');
-        $('#charlie_modal').addClass('display-block');
+    $('#trigger_jaakko').click(function() {
+        $('#jaakko_modal').removeClass('display-none');
+        $('#jaakko_modal').addClass('display-block');
     });
 
     $('#trigger_michael').click(function() {
@@ -207,11 +207,11 @@ $(document).ready(function() {
 
     $(document).click(function(event) {
     // if user click on anything except the modal itself close the modal
-      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_charlie, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, #trigger_antti, .modal-content").length) {
+      if (!$(event.target).closest("#trigger_jasmine, #trigger_mikko, #trigger_ines, #trigger_jaakko, #trigger_michael, #trigger_marko, #trigger_goran, #trigger_tuomas, #trigger_antti, .modal-content").length) {
         
         // Handle speaker modals
-        $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').removeClass('display-block');
-        $('#jasmine_modal, #mikko_modal, #ines_modal, #charlie_modal, #michael_modal').addClass('display-none');
+        $('#jasmine_modal, #mikko_modal, #ines_modal, #jaakko_modal, #michael_modal').removeClass('display-block');
+        $('#jasmine_modal, #mikko_modal, #ines_modal, #jaakko_modal, #michael_modal').addClass('display-none');
         
         // Handle workshop modals
         $('#marko_modal, #goran_modal, #tuomas_modal, #antti_modal').removeClass('display-block');
