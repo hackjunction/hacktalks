@@ -154,6 +154,10 @@
     #partners .row .span-1-of-6:last-child {
         display: none;
     }
+
+    #partners .span-1-of-5 .half-screen {
+        width: 50% !important;
+    }
 }
 
 
